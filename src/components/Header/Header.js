@@ -1,11 +1,12 @@
 import React from 'react'
 import '../Header/Header.css'
+import {CON_URL} from '../Utils/Constants'
 function Header() {
   return (
     <div className='header'>
       <div className='logo-container'>
       <img className='Logo' 
-       src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"></img>
+       src={CON_URL}></img>
       </div>
       <div className='nav-items'>
       <ul>

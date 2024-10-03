@@ -1,13 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Body.css'
+import {LOGO_URL} from '../Utils/Constants'
+
+
 const ResCard = () => {
+
+  // Local State variable = super powerful variable
+
+  const [ListofRestaurants] = useState([]);
+
+  // normal JS variable
+  // let ListofRestaurants = [
+  //   {
+  //    data: {
+  //      id: "1",
+  //      name: "Dominos",
+  //      avgRating: "3.8"
+  //    }
+  //   },
+ 
+  //   {
+  //    data: {
+  //      id: "2",
+  //      name: "kfc",
+  //      avgRating: "4.8"
+  //    }
+  //   }
+ 
+  //  ];
    
   return (
     <> 
     <div className='res-card' style={{backgroundColor: "#f0f0f0"}}>
-    <img className='img' src="https://images.squarespace-cdn.com/content/v1/5e39f4d22daa1e7d6a8b8812/1584666434400-5BE4CE9N8OLSQ9DANWLH/Food"></img>
+    <img className='img' src={LOGO_URL}></img>
     <h3>
-        Meghna Foods
+        
     </h3>
     <h4>
         Biriyani, North Indian, Asian

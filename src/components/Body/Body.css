@@ -18,6 +18,9 @@
 
 .search {
     padding: 10px;
+    border: 2px solid grey;
+    margin: 20px;
+    border-radius: 60px;
 }
 
 .resto-container {
