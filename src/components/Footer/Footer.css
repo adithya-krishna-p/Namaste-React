@@ -1,0 +1,10 @@
+.footer {
+    position: relative;
+    float: none;
+    top: 390px;
+    background-color: gray;
+    color: aliceblue;
+    border: solid 3px;
+    border-color: black;
+    
+}

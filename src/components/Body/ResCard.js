@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import './Body.css'
 import {LOGO_URL} from '../Utils/Constants'
+import resList from '../Utils/MockData'
 
-
-const ResCard = () => {
+const ResCard = (props) => {
 
   // Local State variable = super powerful variable
 
-  const [ListofRestaurants] = useState([]);
+  const [ListofRestaurants, setListofRestaurant] = useState([]);
+ 
 
   // normal JS variable
   // let ListofRestaurants = [
@@ -41,6 +42,9 @@ const ResCard = () => {
     </h4>
     <h4>
         4.4 Stars
+    </h4>
+    <h4>
+      34 minutes
     </h4>
 </div>
 

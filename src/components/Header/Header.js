@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Header/Header.css'
 import {CON_URL} from '../Utils/Constants'
 function Header() {
+  const [btmNameReact, setbtmNameReact] = useState("Login");
   return (
     <div className='header'>
       <div className='logo-container'>
@@ -14,6 +15,14 @@ function Header() {
         <li>About Us</li>
         <li>Contact Us</li>
         <li>Cart</li>
+        <button className="login"
+        onClick={()=> {
+          btmNameReact === "Login" 
+          ? setbtmNameReact("Login")
+          : setbtmNameReact("Logout")
+        }}>
+         {btmNameReact}
+        </button>
       </ul>
       </div>
     </div>
